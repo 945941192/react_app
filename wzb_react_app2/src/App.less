@@ -1,0 +1,68 @@
+.App {
+  width: 100%;
+  height: 100vh;
+  font-size: 14px;
+  padding-top: 56px;
+  position: relative;
+  overflow: hidden;
+  background-color: #F2F3F7;
+  // background-color: rgb(216, 238, 247);
+  
+  font-family: '微软雅黑';
+  .content{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .commonCent{
+    padding: 10px 20px 10px 20px;
+    height: 100%;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+      width: 8px;
+      height: 30px;
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb{
+      background-color: #ddd;
+      border-radius: 8px;
+    }
+    &::-webkit-scrollbar-track{
+      background-color: transparent;
+    }
+  }
+  .whiteCent{
+    margin-top:10px;
+    padding:20px;
+    background:  #FFFFFF;
+    h4{
+      font-size: 16px;
+    }
+  }
+}
+.scroll-box{
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 80px; 
+  &::-webkit-scrollbar{/*滚动条整体部分，其中的属性有width,height,background,border等（就和一个块级元素一样）（位置1）*/
+    width:6px;
+  }
+  &::-webkit-scrollbar-thumb{/*滚动条里面可以拖动的那部分（位置5）*/
+    background:#ddd;
+    border-radius:4px;
+  }
+}
+
+// .ant-table-thead > tr > th{
+//   // font-size: 14px;
+//   color: #999999!important;
+//   // white-space: nowrap;
+// }
+// .ant-table-tbody > tr > td{
+//   font-size:12px; 
+//   color: #333333!important;
+// }
+
+// .ant-table-content .ant-table-body table tr:hover>td{
+//   background: none;
+// }
