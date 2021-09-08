@@ -7,7 +7,7 @@ import {
 import { Link } from 'react-router-dom';
 import moment from 'moment'
 
-// import { getSarTableInfo } from '../../../../service/os';
+import { getSarTableInfo } from '../../../../service/os';
 import './index.less';
 
 // const { TextArea } = Input;
@@ -24,15 +24,15 @@ class Hello extends Component {
 
   // 获取数据
   getTableInfo = () => {
-    // getSarTableInfo().then((obj) => {
-    //   let data = obj.data;
-    //   this.setState({
-    //     table_info: data,
-    //     table_info_all: data,
-    //   })
-    // }).catch((error) => {
-    //   console.log(error)
-    // })
+    getSarTableInfo().then((obj) => {
+      let data = obj.data;
+      this.setState({
+        table_info: data,
+        table_info_all: data,
+      })
+    }).catch((error) => {
+      console.log(error)
+    })
   }
 
   // 渲染组件数据
